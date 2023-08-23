@@ -1,3 +1,25 @@
+# Quick start test on github code space
+## Install requirements
+```
+pip install -r requriements
+```
+## Download the local llm models into the model dir
+```
+cd model
+mkdir model1
+cd model1
+wget https://huggingface.co/TheBloke/vicuna-7B-1.1-GGML/resolve/main/vicuna-7b-1.1.ggmlv3.q4_0.bin
+```
+I named the model model1 for simplicity and downloaded the vicuna-7b 4bit for the lightest inference.
+
+## Go back to the main directory and launch the server
+```
+python server.py --model mode1 --share
+```
+Then you can see two links of the chat server, where one is local and the other is public. Since GitHub codespace has a bandwidth limit for public URL, you can click the local link (xx.xx.xx.xx.) to view the chatbot using local llm.
+
+
+
 # Text generation web UI
 
 A Gradio web UI for Large Language Models.
