@@ -1,0 +1,10 @@
+Step 1. Intsall requirements
+pip install -r requirements.txt
+
+Step2. Download models (put model into foldr name model1, we can also named other folder names)
+cd models
+mkdir model1 
+wget https://huggingface.co/TheBloke/vicuna-7B-1.1-GGML/resolve/main/vicuna-7b-1.1.ggmlv3.q4_0.bin
+
+Step 3. Lanuch the server
+python server.py --model model1 --share
