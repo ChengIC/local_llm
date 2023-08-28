@@ -5,7 +5,7 @@ pip install -r requriements
 ```
 ## Download the local llm models into the model dir
 ```
-cd model
+cd models
 mkdir model1
 cd model1
 wget https://huggingface.co/TheBloke/vicuna-7B-1.1-GGML/resolve/main/vicuna-7b-1.1.ggmlv3.q4_0.bin
