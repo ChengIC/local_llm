@@ -14,7 +14,7 @@ I named the model model1 for simplicity and downloaded the vicuna-7b 4bit for th
 
 ## Go back to the main directory and launch the server
 ```
-python server.py --model mode1 --share
+python server.py --model model1 --share
 ```
 Then you can see two links of the chat server, where one is local and the other is public. Since GitHub codespace has a bandwidth limit for public URL, you can click the local link (xx.xx.xx.xx.) to view the chatbot using local llm.
 
